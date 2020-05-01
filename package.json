@@ -1,0 +1,11 @@
+{
+  "name": "festival-films-open-air",
+  "version": "1.0.0",
+  "description": "Project Openclassrooms 'Analysez les besoins de votre client pour son festival de films'",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "Kirill PETROV",
+  "license": "ISC"
+}
