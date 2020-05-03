@@ -1,0 +1,11 @@
+ 
+
+.nav {
+    &__link {
+        display: inline;
+        @include nav-text-palette($nav-text-palette);
+        & a {
+            text-decoration: none;
+        }   
+    }
+}

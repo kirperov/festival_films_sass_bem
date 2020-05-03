@@ -1,0 +1,9 @@
+/*MIXINS*/ 
+@mixin nav-text-palette($palettes) {
+    @each $state, $palette in $palettes {
+        &:#{$state} {
+            border-bottom: .1rem solid map-get($palette, border);
+            color: map-get($palette, txt);
+        }
+    }
+}

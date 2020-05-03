@@ -16,13 +16,38 @@
   <meta property="og:url" content="#" />
   <meta property="og:image" content="logo" />
   <!-- LINKS STYLES -->
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="header"></header>
-    <p>Test</p>
+  <!-- START HEADER -->
+  <header class="header">
+    <img class="header__logo" src="public/logo.png" alt="logo festival du cinéma en plein air">
+    <!--START MENU -->
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <ul>
+            <li class="nav__link nav__link--active"><a href="/index.html">Accueil</a></li>
+            <li class="nav__link"><a href="/list_films.html">Films</a></li>
+            <li class="nav__link"><a href="/list_news">Actualités</a></li>
+            <li class="nav__link"><a href="/contact.html">Contact</a></li>
+            <li class="nav__link">
+              <input type="search" placeholder="Rechercher">
+              <button class="btn" type="sumbit">Chercher</button>
+            </li>
+        </ul>
+    </nav>
+    <!-- END MENU -->
+</header>
+   
+
+<!-- START IMAGE -->
+<section class="head">
+  <button class="btn">Découvrir</button>
+</section>
+ 
+<section class="presentation"></section>
+
   <script src="js/scripts.js"></script>
 </body>
 </html>

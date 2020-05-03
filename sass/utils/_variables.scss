@@ -1,0 +1,13 @@
+/*VARIABLES*/ 
+$color-primary: #0081d1;
+$color-secondary: #0088bc;
+$clolor-black: #000000;
+$color-white: #ffffff;
+
+/*MAP FOR NAVIGATION LINKS MENU*/ 
+$nav-text-palette: (
+    hover: (
+        txt: $color-white,
+        border: $color-white,
+    )
+);

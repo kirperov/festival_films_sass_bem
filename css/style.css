@@ -1,3 +1,21 @@
+/*IMPORT VARIABLES*/
+/*VARIABLES*/
+/*MAP FOR NAVIGATION LINKS MENU*/
+/*MIXINS*/
+.nav__link {
+  display: inline;
+}
+.nav__link:hover {
+  border-bottom: 0.1rem solid #ffffff;
+  color: #ffffff;
+}
+.nav__link a {
+  text-decoration: none;
+}
 
+.header {
+  background-color: #0081d1;
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
