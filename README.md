@@ -1,7 +1,7 @@
 ## Prject Festival films open air with technology SASS(Scss) and method BEM(Block Element Content)
 
 
-**How to instal SASS**
+**How to install SASS**
 
 ------------
 
