@@ -14,7 +14,7 @@ First install NPM! Npm is a package manager for the JavaScript programming langu
    1.  Check your version Sass to verify if is instaled : sass  --version
   1.  Run sass: npm run sass
   
-**Now you have SASS in your. **
+**Now you have SASS in your computer. **
 
 Your code SASS will be compiled in CSS! Enjoy !;) 
 :smile:
