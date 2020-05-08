@@ -1,6 +1,14 @@
 .banner {
     &__btn {
         @include btn;
-        align-items: center;
+        background-color: $color-action;
+        &:hover {
+            background-color:$color-action-hover;
+            color: $color-black;
+        }
+        &:active {
+            position:relative;
+            top:1px;
+        }
     }
 }

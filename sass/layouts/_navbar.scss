@@ -10,7 +10,9 @@
     &__link {
         display: inline;
         & a {
+            color: $color-white;
             text-decoration: none;
+            font-family: 'RobotoMedium';
             @include nav-text-palette($nav-text-palette);
         }   
         input {

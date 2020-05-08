@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 
 <html prefix="og: http://ogp.me/ns#" lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Accueil</title>
-  <!-- META DESCIPTION -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="L'association Les Films de Plein Air">
-  <meta name="author" content="Les Films de Plein Air">
-  <!-- PROTOCOL FOR SOCIAL MEDIA -->
-  <meta property="og:title" content="Les Films de Plein Air"/>
-  <meta property="og:description" content="Nous organisons le festival des films de plein air du 5 au 8 août au parc Monceau à Paris." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="#" />
-  <meta property="og:image" content="logo" />
-  <!-- LINKS STYLES -->
-  <link rel="stylesheet" href="css/style.css?v=1.0">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <!-- META DESCIPTION -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="L'association Les Films de Plein Air">
+    <meta name="author" content="Les Films de Plein Air">
+    <!-- PROTOCOL FOR SOCIAL MEDIA -->
+    <meta property="og:title" content="Les Films de Plein Air"/>
+    <meta property="og:description" content="Nous organisons le festival des films de plein air du 5 au 8 août au parc Monceau à Paris." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="logo" />
+    <!-- LINKS STYLES -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <script src="https://kit.fontawesome.com/f15b56fd4f.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  <!-- START HEADER -->
-  <header class="header">
-    <img class="header__logo" src="public/images/logo.png" alt="logo festival du cinéma en plein air">
-    <!--START MENU -->
-    <!-- NAVBAR -->
-    <nav class="nav">
-        <ul>
-            <li class="nav__link nav__link--active"><a href="/index.html">Accueil</a></li>
-            <li class="nav__link"><a href="/list_films.html">Films</a></li>
-            <li class="nav__link"><a href="/list_news">Actualités</a></li>
-            <li class="nav__link"><a href="/contact.html">Contact</a></li>
-            <li class="nav__link">
-              <input type="search" placeholder="Rechercher">
-              <button class="btn" type="sumbit">Chercher</button>
-            </li>
-        </ul>
-    </nav>
-    <!-- END MENU -->
-</header>
-<!-- START IMAGE -->
-<main class="container">
-  <section class="banner">
-    <button class="banner__btn">Découvrir</button>
-  </section>
-</main>
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <img class="header__logo" src="public/images/logo.png" alt="logo festival du cinéma en plein air">
+      <!--START MENU -->
+      <!-- NAVBAR -->
+      <nav class="nav">
+          <ul>
+              <li class="nav__link nav__link--active"><a href="/index.html">Accueil</a></li>
+              <li class="nav__link"><a href="/list_films.html">Films</a></li>
+              <li class="nav__link"><a href="/list_news">Actualités</a></li>
+              <li class="nav__link"><a href="/contact.html">Contact</a></li>
+              <li class="nav__link">
+                <input type="search" placeholder="Rechercher">
+                <i class="fas fa-search"></i>
+              </li>
+          </ul>
+      </nav>
+      <!-- END MENU -->
+  </header>
+  <!-- START IMAGE -->
+  <main class="container">
+    <section class="banner">
+      <button class="banner__btn">Découvrir</button>
+    </section>
 
-<script src="js/scripts.js"></script>
-</body>
+    <div class="presentation-grid">
+      <h1 class="presentation-grid__heading">Féstival</h1>
+      <section class="presentation-prev">
+          <p class="presentation-prev__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu eros nisi. Aliquam id tincidunt lorem, sit amet faucibus tortor. Vestibulum tellus ante, suscipit at eleifend ac, venenatis sed felis. Phasellus varius porttitor felis, quis scelerisque turpis. Duis semper sed enim eget commodo. Quisque interdum neque eu urna ultricies, et sagittis justo pulvinar. Donec pharetra neque orci, a sodales metus convallis nec. Etiam augue nulla, cursus et tellus at, semper rhoncus erat. Vivamus ac purus efficitur, auctor tellus non, dignissim tellus. Praesent tristique efficitur justo. Praesent in magna eu sapien ultrices suscipit a maximus risus. Donec in elit ut tellus commodo bibendum. Vestibulum vehicula quis est quis maximus. Mauris libero lorem, tincidunt at massa eget, tempor elementum mauris. </p>
+        <div class="presentation-prev__image">          
+          <img  src="public/images/our_office.jpg" alt="logo festival du cinéma en plein air">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/scripts.js"></script>
+  </body>
 </html>

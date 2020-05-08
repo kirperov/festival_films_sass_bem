@@ -7,5 +7,8 @@
     "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "author": "Kirill PETROV",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }

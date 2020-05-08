@@ -1,12 +1,17 @@
 $color-primary: #0081d1;
 $color-secondary: #0088bc;
-$clolor-black: #000000;
+$color-action: #8d5ec2;
+$color-action-hover: #9b74c5;
+$color-active: #3c73d3;
+$color-description:#008c9d;
+$color-card: #008c7a;
+$color-text-hover: rgb(177, 177, 177);
+$color-black: #000000;
 $color-white: #ffffff;
 
 /*MAP FOR NAVIGATION LINKS MENU*/ 
 $nav-text-palette: (
     hover: (
-        txt: $color-white,
-        border: $color-white,
+        txt: $color-text-hover
     )
 );
