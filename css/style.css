@@ -1,21 +1,57 @@
-/*IMPORT VARIABLES*/
-/*VARIABLES*/
 /*MAP FOR NAVIGATION LINKS MENU*/
-/*MIXINS*/
+.banner__btn {
+  height: 40px;
+  align-items: center;
+}
+
+.nav {
+  width: 100%;
+}
+.nav ul {
+  float: right;
+  margin-right: 50px;
+}
+.nav ul li {
+  margin-right: 20px;
+}
 .nav__link {
   display: inline;
 }
-.nav__link:hover {
+.nav__link a {
+  text-decoration: none;
+}
+.nav__link a:hover {
   border-bottom: 0.1rem solid #ffffff;
   color: #ffffff;
 }
-.nav__link a {
-  text-decoration: none;
+.nav__link input {
+  margin-left: 40px;
 }
 
 .header {
   background-color: #0081d1;
   display: flex;
+  padding: 10px;
+}
+
+.header__logo {
+  width: 60px;
+}
+
+.banner {
+  background-image: url("../public/images/img_banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: #464646;
+  width: 100%;
+  height: 500px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

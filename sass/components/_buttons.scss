@@ -1,0 +1,6 @@
+.banner {
+    &__btn {
+        @include btn;
+        align-items: center;
+    }
+}

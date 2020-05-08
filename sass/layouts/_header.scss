@@ -1,4 +1,10 @@
 .header {
     background-color: $color-primary;
     display: flex;
+    padding: 10px;
+    
+}
+
+.header__logo {
+    width: 60px;
 }
