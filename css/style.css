@@ -1,17 +1,176 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 10 | @import "./pages/home";
- *    |         ^^^^^^^^^^^^^^
- *    '
- *   sass\main.scss 10:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @import \"./pages/home\";\d\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 10:9  root stylesheet";
+/*MAP FOR NAVIGATION LINKS MENU*/
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../public/fonts/Roboto-Medium.ttf");
 }
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("../public/fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../public/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../public/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../public/fonts/Roboto-Light.ttf");
+}
+.banner__btn {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 20px 60px;
+  text-decoration: none;
+  border: none;
+  background-color: #8d5ec2;
+}
+.banner__btn:hover {
+  background-color: #9b74c5;
+  color: #000000;
+}
+.banner__btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.nav {
+  width: 100%;
+}
+.nav ul {
+  float: right;
+  margin-right: 50px;
+}
+.nav ul li {
+  margin-right: 20px;
+}
+.nav__link {
+  display: inline;
+}
+.nav__link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "RobotoMedium";
+}
+.nav__link a:hover {
+  color: #b1b1b1;
+}
+.nav__link input {
+  margin-left: 40px;
+}
+
+.header {
+  background-color: #0081d1;
+  display: flex;
+  padding: 10px;
+}
+
+.header__logo {
+  width: 60px;
+}
+
+.banner {
+  background-image: url("../public/images/img_banner.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: #464646;
+  width: 100%;
+  height: 500px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.presentation-grid__heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "RobotoRegular";
+  order: -1;
+  flex: 1 0 100%;
+}
+
+.presentation-prev {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+}
+.presentation-prev__description {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "RobotoLight";
+  padding: 5%;
+}
+.presentation-prev__description > h2 {
+  justify-content: center;
+  font-family: "RobotoRegular";
+}
+.presentation-prev__image {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.films-comming-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.films-comming-grid__heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "RobotoRegular";
+  order: -1;
+  flex: 1 0 100%;
+}
+
+.films-comming-prev {
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.films-comming-prev .films-comming {
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.films-comming-prev .films-comming__card {
+  background-color: #008c7a;
+  width: 100%;
+  font-family: "RobotoLight";
+  margin: 20px;
+}
+.films-comming-prev .films-comming__card > img {
+  width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
