@@ -11,4 +11,51 @@
 	font-family: 'RobotoLight';
     text-decoration:none;
     border:none;
+    &--large {
+        font-size:20px;
+        padding:20px 60px;
+    }
+}
+
+@mixin card {
+    &__card {
+        border-radius: 0.5em;
+        background-color: $color-card;
+        font-family: 'RobotoLight';
+        margin: 25px;
+        transition-duration: 1s;
+        &:hover {
+            box-shadow: 0px 3px 30px 0px rgba(66, 66, 66, 1);
+            transition-duration: 1s;
+        }
+    }
+}
+
+@mixin card-body {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__img {
+        width: 100%;
+    }
+    &__btn {
+        @include btn;
+        padding: 0.8em;
+        margin: 0.5em;
+        border-radius: 0.4em;
+        color: white;
+        background-color: $btn-secondary;
+        transition-duration: 1s;
+    }
+    &__btn:hover {
+        color: black;
+        background-color: $color-action-hover;
+        transition-duration: 1s;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
 }
