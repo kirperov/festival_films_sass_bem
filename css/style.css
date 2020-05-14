@@ -21,12 +21,11 @@
 }
 .banner__btn {
   cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 20px;
-  padding: 20px 60px;
+  font-family: "RobotoLight";
   text-decoration: none;
   border: none;
+  font-size: 20px;
+  padding: 20px 60px;
   background-color: #8d5ec2;
 }
 .banner__btn:hover {
@@ -83,9 +82,14 @@
   height: 500px;
 }
 
+.container {
+  margin: 0 12%;
+}
+
 body {
   padding: 0;
   margin: 0;
+  line-height: 1.3em;
 }
 
 .banner {
@@ -110,10 +114,8 @@ body {
 }
 
 .presentation-prev {
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  width: 80%;
   align-items: center;
 }
 .presentation-prev__description {
@@ -122,7 +124,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   font-family: "RobotoLight";
-  padding: 5%;
 }
 .presentation-prev__description > h2 {
   justify-content: center;
@@ -151,26 +152,37 @@ body {
 }
 
 .films-comming-prev {
-  padding: 20px;
-  width: 80%;
   display: flex;
   justify-content: center;
 }
 .films-comming-prev .films-comming {
-  padding: 20px;
-  width: 80%;
   display: flex;
   justify-content: center;
 }
 .films-comming-prev .films-comming__card {
   background-color: #008c7a;
-  width: 100%;
   font-family: "RobotoLight";
-  margin: 20px;
+  margin: 25px;
 }
-.films-comming-prev .films-comming__card > img {
+.films-comming-prev .films-comming__card-body {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.films-comming-prev .films-comming__card-body__description {
+  display: flex;
+  flex-direction: column;
+}
+.films-comming-prev .films-comming__card-body > img {
   width: 100%;
-  text-align: center;
+}
+.films-comming-prev .films-comming__card-body > button {
+  cursor: pointer;
+  font-family: "RobotoLight";
+  text-decoration: none;
+  border: none;
+  padding: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

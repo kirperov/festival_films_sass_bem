@@ -1,6 +1,7 @@
 body {
     padding:0;
     margin:0;
+    line-height: 1.3em;
 }
 
 .banner {
@@ -25,10 +26,8 @@ body {
 }
 
 .presentation-prev {
-    padding: 20px;
     display: flex;
     flex-direction: row;
-    width: 80%;
     align-items: center;
     &__description {
         width: 60%;
@@ -36,7 +35,7 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         font-family: 'RobotoLight';
-        padding: 5%;
+ 
     }
     &__description > h2 {
         justify-content: center;
@@ -66,24 +65,32 @@ body {
 }
 
 .films-comming-prev {
-    padding: 20px;
-    width: 80%;
     display: flex;
     justify-content: center;
     .films-comming {
-        padding: 20px;
-        width: 80%;
         display: flex;
         justify-content: center;
         &__card {
             background-color: $color-card;
-            width: 100%;
             font-family: 'RobotoLight';
-            margin: 20px;
-        }
-        &__card > img {
-            width: 100%;
-            text-align: center;
+            margin: 25px;
+            &-body {
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__description {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            &-body > img {
+                width: 100%;
+            }
+            &-body > button {
+                @include btn;
+                padding: 0.5em;
+            }
         }
     }
 }
