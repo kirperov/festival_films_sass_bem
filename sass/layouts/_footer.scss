@@ -1,3 +1,6 @@
+.footer {
+    
+}
 .footer-grid {
     display: flex;
     justify-content: space-between;
@@ -5,6 +8,7 @@
     background-color: $color-footer;
     color: $color-white;
     font-family: 'RobotoLight';
+    @include responsiveFooter;
 }
 
 .site-map {

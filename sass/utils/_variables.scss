@@ -12,9 +12,13 @@ $color-footer-secondary: #929292;
 $color-white: #ffffff;
 $btn-secondary: rgb(110, 153, 233);
 
-/*MAP FOR NAVIGATION LINKS MENU*/ 
 $nav-text-palette: (
     hover: (
         txt: $color-text-hover
     )
+);
+
+$breakpoints: (
+  mobile: 599px,
+  tablet: 991px
 );
