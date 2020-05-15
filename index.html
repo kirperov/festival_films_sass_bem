@@ -17,28 +17,34 @@
     <meta property="og:image" content="logo" />
     <!-- LINKS STYLES -->
     <link rel="stylesheet" href="css/style.css?v=1.0">
-    <script src="https://kit.fontawesome.com/f15b56fd4f.js" crossorigin="anonymous"></script>
+    <!-- USE FONTAWESOME ICONS CSS -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> 
+
   </head>
 
   <body>
     <!-- START HEADER -->
     <header class="header">
-      <img class="header__logo" src="public/images/logo.png" alt="logo festival du cinéma en plein air">
+      <div class="header__logo">
+        <img src="public/images/logo.png" alt="logo festival du cinéma en plein air">
+     </div>
       <!--START MENU -->
       <!-- NAVBAR -->
       <nav class="nav">
-          <ul id="menu">
-              <li class="nav__link nav__link--active"><a href="/index.html">Accueil</a></li>
-              <li class="nav__link"><a href="/list_films.html">Films</a></li>
-              <li class="nav__link"><a href="/list_news">Actualités</a></li>
-              <li class="nav__link"><a href="/contact.html">Contact</a></li>
-              <li class="nav__link">
-                <input type="search" placeholder="Rechercher">
-                <i class="fas fa-search"></i>
-              </li>
-          </ul>
+        <div class="nav-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="open desktop">
+          <li class="nav__link"><a href="/index.html">Accueil</a></li>
+          <li class="nav__link"><a href="/list_films.html">Films</a></li>
+          <li class="nav__link"><a href="/list_news">Actualités</a></li>
+          <li class="nav__link"><a href="/contact.html">Contact</a></li>
+          <li class="nav__link">
+            <input type="search" placeholder="Rechercher"><span><i class="fas fa-search"></i></span>
+          </li>
+        </ul>
       </nav>
-  </header>
+    </header>
   <!-- START BANNER -->
   <section class="banner">
     <button class="btn btn--large">Découvrir</button>
@@ -53,7 +59,7 @@
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu eros nisi. Aliquam id tincidunt lorem, sit amet faucibus tortor. Vestibulum tellus ante, suscipit at eleifend ac, venenatis sed felis. Phasellus varius porttitor felis, quis scelerisque turpis. Duis semper sed enim eget commodo. Quisque interdum neque eu urna ultricies, et sagittis justo pulvinar. Donec pharetra neque orci, a sodales metus convallis nec. Etiam augue nulla, cursus et tellus at, semper rhoncus erat. Vivamus ac purus efficitur, auctor tellus non, dignissim tellus. Praesent tristique efficitur justo. Praesent in magna eu sapien ultrices suscipit a maximus risus. Donec in elit ut tellus commodo bibendum. Vestibulum vehicula quis est quis maximus. Mauris libero lorem, tincidunt at massa eget, tempor elementum mauris.  </p>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu eros nisi. Aliquam id tincidunt lorem, sit amet faucibus tortor. Vestibulum tellus ante, suscipit at eleifend ac, venenatis sed felis. Phasellus varius porttitor felis, quis scelerisque turpis. Duis semper sed enim eget commodo. Quisque interdum neque eu urna ultricies, et sagittis justo pulvinar. Donec pharetra neque orci, a sodales metus convallis nec. Etiam augue nulla, cursus et tellus at, semper rhoncus erat. Vivamus ac purus efficitur, auctor tellus non, dignissim tellus. Praesent tristique efficitur justo. Praesent in magna eu sapien ultrices suscipit a maximus risus. Donec in elit ut tellus commodo bibendum. Vestibulum vehicula quis est quis maximus. Mauris libero lorem, tincidunt at massa eget, tempor elementum mauris.  </p>
         </div>
-        <img class="presentation-prev__image"  src="public/images/our_office.jpg" alt="logo festival du cinéma en plein air">
+        <img class="presentation-prev__image" src="public/images/our_office.jpg" alt="logo festival du cinéma en plein air">
       </section>
     </div>
     <div class="films-comming-grid">
@@ -125,6 +131,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
+  <!-- USE FONTAWESOME JS FOR ICONS -->
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="public/scripts.js"></script>
   </body>
 </html>
