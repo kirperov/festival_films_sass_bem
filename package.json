@@ -4,10 +4,12 @@
   "description": "Project Openclassrooms 'Analysez les besoins de votre client pour son festival de films'",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Kirill PETROV",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "jquery": "^3.5.1"
