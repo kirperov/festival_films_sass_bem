@@ -1,3 +1,14 @@
+@mixin responsiveFooter {
+    @each $device, $breackpoint in $breakpoints {
+        @media screen and (max-width: map-get($breakpoints, $device)){
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 0 30% 5% 30%;
+        }
+    }
+}
+
 .footer-grid {
     display: flex;
     justify-content: space-between;
@@ -36,8 +47,6 @@
     &-form {
         display: flex;
         flex-direction: column;
-    
-
         & > input {
             border-color: $color-secondary;
             margin: 1em 0 1em 0;
@@ -56,3 +65,4 @@
         }
     }
 }
+

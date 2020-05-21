@@ -1,0 +1,73 @@
+.presentation-film {
+    &-grid {
+        @include presentation_grid;
+    }
+
+    &-prev {
+        @include presentation_card;
+        @include responsive_presentation(column);
+    }
+}
+ 
+.films-similar {
+    display: flex;
+    justify-content: center;
+    @include card_component;
+    @include responsive_card; 
+}
+
+.inscription-film {
+    &-prev {
+        margin-top: 5em;
+        display: flex;
+        align-items: center;
+        background-color: $color-action;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+        &__map {
+            width: 50%;
+            height: 400px;
+            background-color: grey;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+        }
+    }
+    &-form {
+        padding: 1%;
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'RobotoLight';
+        @media screen and (max-width: map-get($breakpoints,tablet)) {
+            flex-direction: column;
+            width: 100%;
+        }
+        &-elem {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 40%;
+            &__input {
+                padding: 3%;
+                margin: 3%;
+ 
+            }
+        }
+        &__btn {
+            background-color: $color-active; 
+            transition-duration: 1s;
+            @include btn;
+            &:hover {
+                background-color:$color-secondary;
+                transition-duration: 1s;
+            }
+        }
+    }
+}

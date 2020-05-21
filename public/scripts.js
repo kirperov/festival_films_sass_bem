@@ -9,8 +9,8 @@ $('.nav-toggle').click(function() {
 $(document).ready(function() {
     var $window = $(window);
     function checkWidth() {
-        var windowsize = $window.width();
-        if (windowsize > 780) {
+        var window_size = $window.width();
+        if (window_size > 780) {
             $('.nav ul').removeClass('open');
             $('.nav ul').removeClass('opening');
         }

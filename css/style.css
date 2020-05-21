@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -47,6 +51,7 @@ body {
   right: 0.5em;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 0.3em;
   padding: 1em;
   margin-right: 1em;
 }
@@ -166,7 +171,7 @@ body {
   align-items: center;
   background-image: url("../public/images/img_banner.jpg");
   background-attachment: fixed;
-  background-position: center center;
+  background-position: bottom;
   background-size: cover;
   background-color: #464646;
   width: 100%;
@@ -183,6 +188,9 @@ body {
 .banner .btn:active {
   position: relative;
   top: 1px;
+}
+.banner .btn > a {
+  text-decoration: none;
 }
 
 .container {
@@ -289,7 +297,6 @@ body {
   order: -1;
   flex: 1 0 100%;
 }
-
 .presentation-prev {
   display: flex;
   flex-direction: row;
@@ -338,6 +345,21 @@ body {
   }
 }
 
+.films-comming {
+  display: flex;
+  justify-content: center;
+}
+.films-comming__card {
+  border-radius: 0.5em;
+  background-color: #008c79d0;
+  font-family: "RobotoLight";
+  margin: 25px;
+  transition-duration: 1s;
+}
+.films-comming__card:hover {
+  box-shadow: 0px 3px 30px 0px #424242;
+  transition-duration: 1s;
+}
 .films-comming-grid {
   display: flex;
   justify-content: center;
@@ -352,40 +374,10 @@ body {
   order: -1;
   flex: 1 0 100%;
 }
-
 .films-comming-prev {
   display: flex;
   justify-content: center;
 }
-
-.films-comming {
-  display: flex;
-  justify-content: center;
-}
-.films-comming__card {
-  border-radius: 0.5em;
-  background-color: #008c7a;
-  font-family: "RobotoLight";
-  margin: 25px;
-  transition-duration: 1s;
-}
-.films-comming__card:hover {
-  box-shadow: 0px 3px 30px 0px #424242;
-  transition-duration: 1s;
-}
-@media screen and (max-width: 599px) {
-  .films-comming {
-    width: 70%;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 991px) {
-  .films-comming {
-    width: 70%;
-    flex-wrap: wrap;
-  }
-}
-
 .films-comming-card-body {
   padding-bottom: 1em;
   display: flex;
@@ -423,6 +415,250 @@ body {
   margin: 1em;
   background-color: #ffffff;
   border-radius: 0.3em;
+}
+@media screen and (max-width: 599px) {
+  .films-comming {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .films-comming {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .films-comming {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .films-comming {
+    width: 90%;
+  }
+}
+
+.presentation-film-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.presentation-film-grid__heading {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+  font-family: "RobotoRegular";
+  order: -1;
+  flex: 1 0 100%;
+}
+.presentation-film-prev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.presentation-film-prev__description {
+  padding: 1em;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "RobotoLight";
+}
+.presentation-film-prev__description > h2 {
+  justify-content: center;
+  font-family: "RobotoRegular";
+}
+.presentation-film-prev__image {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 599px) {
+  .presentation-film-prev {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation-film-prev__description {
+    width: 80%;
+  }
+  .presentation-film-prev__image {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .presentation-film-prev {
+    display: flex;
+    flex-direction: column;
+  }
+  .presentation-film-prev__description {
+    width: 80%;
+  }
+  .presentation-film-prev__image {
+    width: 80%;
+  }
+}
+
+.films-similar {
+  display: flex;
+  justify-content: center;
+}
+.films-similar__card {
+  border-radius: 0.5em;
+  background-color: #008c79d0;
+  font-family: "RobotoLight";
+  margin: 25px;
+  transition-duration: 1s;
+}
+.films-similar__card:hover {
+  box-shadow: 0px 3px 30px 0px #424242;
+  transition-duration: 1s;
+}
+.films-similar-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.films-similar-grid__heading {
+  margin: 3em;
+  display: flex;
+  justify-content: center;
+  font-family: "RobotoRegular";
+  order: -1;
+  flex: 1 0 100%;
+}
+.films-similar-prev {
+  display: flex;
+  justify-content: center;
+}
+.films-similar-card-body {
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.films-similar-card-body__img {
+  width: 100%;
+}
+.films-similar-card-body__btn {
+  cursor: pointer;
+  font-family: "RobotoLight";
+  text-decoration: none;
+  border: none;
+  padding: 0.8em;
+  margin: 0.5em;
+  border-radius: 0.4em;
+  color: white;
+  background-color: #6e99e9;
+  transition-duration: 1s;
+}
+.films-similar-card-body__btn--large {
+  font-size: 20px;
+  padding: 20px 60px;
+}
+.films-similar-card-body__btn:hover {
+  color: black;
+  background-color: #9b74c5;
+  transition-duration: 1s;
+}
+.films-similar-card-body__description {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  background-color: #ffffff;
+  border-radius: 0.3em;
+}
+@media screen and (max-width: 599px) {
+  .films-similar {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .films-similar {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .films-similar {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 760px) {
+  .films-similar {
+    width: 90%;
+  }
+}
+
+.inscription-film-prev {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  background-color: #8d5ec2;
+}
+@media screen and (max-width: 1000px) {
+  .inscription-film-prev {
+    flex-direction: column;
+  }
+}
+.inscription-film-prev__map {
+  width: 50%;
+  height: 400px;
+  background-color: grey;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .inscription-film-prev__map {
+    width: 100%;
+  }
+}
+.inscription-film-form {
+  padding: 1%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "RobotoLight";
+}
+@media screen and (max-width: 991px) {
+  .inscription-film-form {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.inscription-film-form-elem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.inscription-film-form-elem__input {
+  padding: 3%;
+  margin: 3%;
+}
+.inscription-film-form__btn {
+  background-color: #3c73d3;
+  transition-duration: 1s;
+  cursor: pointer;
+  font-family: "RobotoLight";
+  text-decoration: none;
+  border: none;
+}
+.inscription-film-form__btn--large {
+  font-size: 20px;
+  padding: 20px 60px;
+}
+.inscription-film-form__btn:hover {
+  background-color: #0088bc;
+  transition-duration: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

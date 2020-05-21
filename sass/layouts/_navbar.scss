@@ -1,3 +1,32 @@
+@mixin hamburger-menu {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 2em;
+    border-radius: 3px;
+    transition: all ease-in-out 350ms;
+}
+
+@mixin responsive-menu {
+    @media(max-width: 809px) {
+        position: fixed;
+        justify-content: center;
+        background-color:rgba(0, 0, 0, 0.747);
+        line-height: 2em;
+}
+    @media (min-width: 810px) {
+        &-toggle {
+                display: none; 
+        }       
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+}
+
 .nav {
     width:100%;
     display: flex;
@@ -9,6 +38,7 @@
         right: .5em;
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.247);
+        border-radius: 0.3em;
         padding: 1em;
         margin-right: 1em;
     }
@@ -54,7 +84,7 @@
     @include responsive-menu;   
 }
 
-.hamburger  {
+.hamburger {
     @include hamburger-menu;
     &::before  {
         transform: translateY(-7px);

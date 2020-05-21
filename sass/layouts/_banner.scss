@@ -4,7 +4,7 @@
     align-items: center;
     background-image: url("../public/images/img_banner.jpg");
     background-attachment:fixed;
-    background-position: center center;
+    background-position: bottom;
     background-size: cover;
     background-color: #464646;
     width: 100%;
@@ -20,5 +20,8 @@
     &:active {
         position:relative;
         top:1px;
+    }
+    & > a {
+        text-decoration: none;
     }
 }

@@ -17,58 +17,50 @@
     }
 }
 
-@mixin card {
-    &__card {
-        border-radius: 0.5em;
-        background-color: $color-card;
-        font-family: 'RobotoLight';
-        margin: 25px;
-        transition-duration: 1s;
-        &:hover {
-            box-shadow: 0px 3px 30px 0px rgba(66, 66, 66, 1);
-            transition-duration: 1s;
-        }
-    }
-}
-
-@mixin card-body {
-    padding-bottom: 1em;
+@mixin presentation_grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__img {
-        width: 100%;
-    }
-    &__btn {
-        @include btn;
-        padding: 0.8em;
-        margin: 0.5em;
-        border-radius: 0.4em;
-        color: white;
-        background-color: $btn-secondary;
-        transition-duration: 1s;
-    }
-    &__btn:hover {
-        color: black;
-        background-color: $color-action-hover;
-        transition-duration: 1s;
-    }
-    &__description {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__heading {
         display: flex;
-        flex-direction: column;
-        padding: 1em;
-        margin: 1em;
-        background-color: $color-white;
-        border-radius: 0.3em;
+        justify-content: center;
+        margin: 3em;
+        font-family: 'RobotoRegular';
+        order: -1;
+        flex: 1 0 100%;
     }
 }
 
+@mixin presentation_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__description {
+        padding: 1em;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-family: 'RobotoLight';
+    }
+    &__description > h2 {
+        justify-content: center;
+        font-family: 'RobotoRegular';
+    }
+    &__image {
+        width: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
 
-@mixin responsivePres {
+@mixin responsive_presentation($direction) {
     @each $device, $breackpoint in $breakpoints {
         @media screen and (max-width: map-get($breakpoints, $device)){
             display: flex;
-            flex-direction: column-reverse; 
+            flex-direction: $direction; 
             &__description {
                 width: 80%;
             }
@@ -79,51 +71,3 @@
     }
 }
 
-@mixin responsiveCard {
-    @each $device, $breackpoint in $breakpoints {
-        @media screen and (max-width: map-get($breakpoints, $device)){
-            width: 70%;
-            flex-wrap: wrap;
-        }
-    }
-}
-
-@mixin responsiveFooter {
-    @each $device, $breackpoint in $breakpoints {
-        @media screen and (max-width: map-get($breakpoints, $device)){
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            padding: 0 30% 5% 30%;
-        }
-    }
-}
-
-@mixin hamburger-menu {
-    content: '';
-    display: block;
-    background: #EBEBD3;
-    height: 3px;
-    width: 2em;
-    border-radius: 3px;
-    transition: all ease-in-out 350ms;
-}
-
-@mixin responsive-menu {
-    @media(max-width: 809px) {
-        position: fixed;
-        justify-content: center;
-        background-color:rgba(0, 0, 0, 0.747);
-        line-height: 2em;
-}
-    @media (min-width: 810px) {
-        &-toggle {
-                display: none; 
-        }       
-        & ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-        }
-    }
-}
