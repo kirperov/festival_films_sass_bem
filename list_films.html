@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css?v=1.0">
     <!-- USE FONTAWESOME ICONS CSS -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" />
   </head>
 
   <body>
@@ -45,66 +45,59 @@
         </ul>
       </nav>
     </header>
-  <!-- START BANNER -->
-  <section class="banner">
-    <a href="#films-comming" type="button" class="btn btn--large"> Découvrir </a>
-  </section>
   <!-- START MAIN -->
   <main class="container">
-
-    <div class="projections-grid">
+    <div class="films-grid">
       <h1>Projections</h1>
-      <section class="projections-prev">
-        <div class="search-films">
-          <form class="search-films-form">
-            <div class="search-films-form-elem">
-              <input class="search-films-form-elem__input" placeholder="Nom">
-              <input class="search-films-form-elem__input" placeholder="Prenom">
+      <section class="films-prev">
+        <div class="films-search">
+          <form class="films-search-form">
+            <div class="films-search-form-elem">
+              <input class="films-search-form-elem__input" placeholder="Titre">
+              <input  id="datepicker" class="films-search-form-elem__input" value="2017-06-01">
             </div>
           </form>
-          <button class="search-films-form__btn">S'abonner</button>
+          <button class="films-search-form__btn">Chercher</button>
         </div>
-        <div class="projections">
-          <div class="projections__card">
-            <div class="projections-card-body">
-              <img class="projections-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-              <div class="projections-card-body__description">
+        <div class="films">
+          <div class="films__card">
+            <div class="films-card-body">
+              <img class="films-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
+              <div class="films-card-body__description">
                 <h3>Another title</h3>
                 <p>This is the content of my news item. Very newsworthy.</p>
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="projections-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn">Découvrir</button>
             </div>
           </div>
         </div>
-
-        <div class="projections">
-          <div class="projections__card">
-            <div class="projections-card-body">
-              <img class="projections-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-              <div class="projections-card-body__description">
+        <div class="films">
+          <div class="films__card">
+            <div class="films-card-body">
+              <img class="films-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
+              <div class="films-card-body__description">
                 <h3>Another title</h3>
                 <p>This is the content of my news item. Very newsworthy.</p>
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="projections-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn">Découvrir</button>
             </div>
           </div>
         </div>
-
-        <div class="projections">
-          <div class="projections__card">
-            <div class="projections-card-body">
-              <img class="projections-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-              <div class="projections-card-body__description">
+        <div class="films">
+          <div class="films__card">
+            <div class="films-card-body">
+              <img class="films-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
+              <div class="films-card-body__description">
                 <h3>Another title</h3>
                 <p>This is the content of my news item. Very newsworthy.</p>
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="projections-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn">Découvrir</button>
             </div>
           </div>
         </div>
@@ -153,6 +146,7 @@
   <!-- USE FONTAWESOME JS FOR ICONS -->
   <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
   <script src="public/scripts.js"></script>
   </body>
 </html>

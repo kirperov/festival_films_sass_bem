@@ -1,0 +1,44 @@
+
+@mixin search-date {
+    &-search {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: map-get($breakpoints,tablet)) {
+            flex-direction: column;
+            width: 100%;
+        }
+        &-form {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'RobotoLight';
+            margin:1em;
+            &__btn {
+                background-color: $color-active; 
+                transition-duration: 1s;
+                padding:1em;
+                @include btn;
+                &:hover {
+                    background-color:$color-secondary;
+                    transition-duration: 1s;
+                }
+            }
+            &-elem {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                width: 40%;
+                @media screen and (max-width: map-get($breakpoints,tablet)) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                &__input {
+                    padding: 5%;       
+                    margin:0.2em;        
+                }
+            }
+        }
+    }
+}

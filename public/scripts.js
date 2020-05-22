@@ -22,3 +22,8 @@ $(document).ready(function() {
     checkWidth();
     $(window).resize(checkWidth);
 });
+
+/*use date picker*/ 
+$( "#datepicker" ).datepicker();
+ 
+
