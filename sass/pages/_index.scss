@@ -12,7 +12,7 @@
 .films-comming {
     display: flex;
     justify-content: center;
-    @include card_component;
+    @include card_component(card);
     @include responsive_card; 
 }
 

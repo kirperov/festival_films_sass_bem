@@ -1,0 +1,37 @@
+.pagination { 
+    margin: 3em;
+    &__btn {         
+        padding: 0.5em;     
+        border-radius: 0.4em;
+        color: white;
+        background-color: $btn-secondary;
+        transition-duration: 1s;
+    }
+    &__btn:hover {
+        color: black;
+        background-color: $color-action-hover;
+        transition-duration: 1s;
+    }
+    &-count {
+         padding:0.3em;
+        &__number {
+            &--active {
+                background-color: $color-active;
+                padding:0.2em 0.4em 0.2em 0.4em;
+                border-radius: 0.2em;
+                font-weight: bold;
+                & a {
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+            & a {
+                color:black;
+                padding:0.1em;
+                text-decoration: none;
+                font-family: 'RobotoMedium';
+                @include nav-text-palette($nav-text-palette);
+            }
+        }
+    }
+}

@@ -12,7 +12,8 @@
 .films-similar {
     display: flex;
     justify-content: center;
-    @include card_component;
+    flex-direction: row;
+    @include card_component(card);
     @include responsive_card; 
 }
 
