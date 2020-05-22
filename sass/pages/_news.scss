@@ -1,8 +1,32 @@
-.news {
-    @include card_component(align-card);
-    @include search-date;
-    @media screen and (max-width: 1000px) {
-        @include card_component(card);
-        @include responsive_card;
+.banner-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../public/images/img_banner.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-color: #464646;
+    width: 100%;
+    height:500px;
+}
+
+.presentation-news {
+    &-grid {
+        @include presentation_grid;
     }
+
+    &-prev {
+        padding: 2em;
+        background-color:  rgba(110, 153, 233, 0.178);
+        @include presentation_card(100%);
+        @include responsive_presentation(column);
+    }
+}
+
+.news-similar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    @include card_component(card);
+    @include responsive_card; 
 }

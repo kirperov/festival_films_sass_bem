@@ -4,7 +4,7 @@
         @include presentation_grid;
     }
     &-prev {
-        @include presentation_card;
+        @include presentation_card(60%);
         @include responsive_presentation(column-reverse);
     }
 }

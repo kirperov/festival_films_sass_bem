@@ -1,0 +1,8 @@
+.news {
+    @include card_component(align-card);
+    @include search-date;
+    @media screen and (max-width: 1000px) {
+        @include card_component(card);
+        @include responsive_card;
+    }
+}
