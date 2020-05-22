@@ -3,7 +3,7 @@
 <html prefix="og: http://ogp.me/ns#" lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Accueil</title>
+    <title>Films</title>
     <!-- META DESCIPTION -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,10 +35,10 @@
           <div class="hamburger"></div>
         </div>
         <ul class="open desktop">
-          <li class="nav__link"><a href="/index.html">Accueil</a></li>
-          <li class="nav__link"><a href="/list_films.html">Films</a></li>
-          <li class="nav__link"><a href="/list_news">Actualités</a></li>
-          <li class="nav__link"><a href="/contact.html">Contact</a></li>
+          <li class="nav__link"><a href="index.html">Accueil</a></li>
+          <li class="nav__link"><a href="list_films.html">Films</a></li>
+          <li class="nav__link"><a href="list_news.html">Actualités</a></li>
+          <li class="nav__link"><a href="contact.html">Contact</a></li>
           <li class="nav__link">
             <input type="search" placeholder="Rechercher"><span><i class="fas fa-search"></i></span>
           </li>
@@ -69,7 +69,7 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
         </div>
@@ -97,7 +97,35 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-card-body__btn">Découvrir</button>
+              <button class="films-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
+            </div>
+          </div>
+        </div>
+        <div class="films">
+          <div class="films__card">
+            <div class="films-card-body">
+              <img class="films-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
+              <div class="films-card-body__description">
+                <h3>Another title</h3>
+                <p>This is the content of my news item. Very newsworthy.</p>
+                <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
+                <span><i class="fas fa-film"></i> Genre: Historique</span>
+              </div>
+              <button class="films-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
+            </div>
+          </div>
+        </div>
+        <div class="films">
+          <div class="films__card">
+            <div class="films-card-body">
+              <img class="films-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
+              <div class="films-card-body__description">
+                <h3>Another title</h3>
+                <p>This is the content of my news item. Very newsworthy.</p>
+                <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
+                <span><i class="fas fa-film"></i> Genre: Historique</span>
+              </div>
+              <button class="films-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
         </div>
@@ -124,10 +152,10 @@
         <div class="site-map">
           <h4 class="site-map__heading">Plan du site</h4>
             <ul class="site-map-nav">
-              <li class="site-map-nav__link"><a href="#">Acceuil</a></li>
-              <li class="site-map-nav__link"><a href="#">Films</a></li>
-              <li class="site-map-nav__link"><a href="#">Actualités</a></li>
-              <li class="site-map-nav__link"><a href="#">Contact</a></li>
+              <li class="site-map-nav__link"><a href="index.html">Acceuil</a></li>
+              <li class="site-map-nav__link"><a href="list_films.html">Films</a></li>
+              <li class="site-map-nav__link"><a href="list_news.html">Actualités</a></li>
+              <li class="site-map-nav__link"><a href="contact.html">Contact</a></li>
               <li class="site-map-nav__link"><a href="#">Mentions légales</a></li>
             </ul>
         </div>
@@ -147,6 +175,6 @@
   <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
-  <script src="public/scripts.js"></script>
+  <script src="public/js/scripts.js"></script>
   </body>
 </html>

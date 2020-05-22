@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <!-- META DESCIPTION -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="L'association Les Films de Plein Air">
+    <meta name="author" content="Les Films de Plein Air">
+    <!-- PROTOCOL FOR SOCIAL MEDIA -->
+    <meta property="og:title" content="Les Films de Plein Air"/>
+    <meta property="og:description" content="Nous organisons le festival des films de plein air du 5 au 8 août au parc Monceau à Paris." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="logo" />
+    <!-- LINKS STYLES -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <!-- USE FONTAWESOME ICONS CSS -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> 
+  </head>
+
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header__logo">
+        <img src="public/images/logo.png" alt="logo festival du cinéma en plein air">
+     </div>
+      <!--START MENU -->
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <div class="nav-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="open desktop">
+          <li class="nav__link"><a href="index.html">Accueil</a></li>
+          <li class="nav__link"><a href="list_films.html">Films</a></li>
+          <li class="nav__link"><a href="list_news.html">Actualités</a></li>
+          <li class="nav__link"><a href="contact.html">Contact</a></li>
+          <li class="nav__link">
+            <input type="search" placeholder="Rechercher"><span><i class="fas fa-search"></i></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <!-- START MAIN -->
+  <main class="container">
+    <div class="contact-grid">
+      <h1 class="contact-grid__heading">Contact</h1>
+      <section class="contact-prev">
+            <form class="contact-form">
+                <div class="contact-form-elem"> 
+                    <input class="contact-form-elem__input" placeholder="Nom">
+                    <input class="contact-form-elem__input" placeholder="Prenom">
+                    <input class="contact-form-elem__input" placeholder="Email">
+                    <textarea class="contact-form-elem__area" rows="8"></textarea>
+                </div>
+                <button class="contact-form__btn btn btn--large">Envoyer</button>
+            </form>
+            <div class="contact-prev-location">
+                <div class="contact-prev-location__description">
+                    <span><i class="fas fa-map-marker-alt"></i> Adresse: 102 Lorem ipsum 1234, Lorem</span>
+                    <span><i class="fas fa-phone-square-alt"></i> 01 02 03 04 05</span>
+                    <span><i class="fas fa-envelope-open-text"></i> lorem@ipsum.com</span>
+                  </div>
+                <div class="contact-prev-location__map" id="map-contact"></div>
+            </div>
+        </section>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-grid">
+        <div class="site-map">
+          <h4 class="site-map__heading">Plan du site</h4>
+            <ul class="site-map-nav">
+              <li class="site-map-nav__link"><a href="index.html">Acceuil</a></li>
+              <li class="site-map-nav__link"><a href="list_films.html">Films</a></li>
+              <li class="site-map-nav__link"><a href="list_news.html">Actualités</a></li>
+              <li class="site-map-nav__link"><a href="contact.html">Contact</a></li>
+              <li class="site-map-nav__link"><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+          <h4 class="newsletter__heading">Newsletter</h4>
+          <span>Abbonez-vous à notre newsletter</span>
+          <form class="newsletter-form">
+            <input class="newsletter-form__input" placeholder="Nom">
+            <input class="newsletter-form__input" placeholder="Email">
+            <button class="newsletter-form__btn">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- USE FONTAWESOME JS FOR ICONS -->
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- MAP WITH API KEY-->
+    <script src="public/js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjZqIb2AY8X_JGUf0sRKwaBUIOW9qXCIQ&callback=initMapContact"> </script>
+    <script src="public/js/scripts.js"></script>
+  </body>
+</html>

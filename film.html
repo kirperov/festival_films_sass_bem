@@ -3,7 +3,7 @@
 <html prefix="og: http://ogp.me/ns#" lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Accueil</title>
+    <title>Star Wars 3: La revanche des Sith</title>
     <!-- META DESCIPTION -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -35,10 +35,10 @@
           <div class="hamburger"></div>
         </div>
         <ul class="open desktop">
-          <li class="nav__link"><a href="/index.html">Accueil</a></li>
-          <li class="nav__link"><a href="/list_films.html">Films</a></li>
-          <li class="nav__link"><a href="/list_news">Actualités</a></li>
-          <li class="nav__link"><a href="/contact.html">Contact</a></li>
+          <li class="nav__link"><a href="index.html">Accueil</a></li>
+          <li class="nav__link"><a href="list_films.html">Films</a></li>
+          <li class="nav__link"><a href="list_news.html">Actualités</a></li>
+          <li class="nav__link"><a href="contact.html">Contact</a></li>
           <li class="nav__link">
             <input type="search" placeholder="Rechercher"><span><i class="fas fa-search"></i></span>
           </li>
@@ -85,7 +85,7 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-similar-card-body__btn">Découvrir</button>
+              <button class="films-similar-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
           
@@ -98,7 +98,7 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-similar-card-body__btn">Découvrir</button>
+              <button class="films-similar-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
           <div class="films-similar__card">
@@ -110,7 +110,7 @@
                 <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
                 <span><i class="fas fa-film"></i> Genre: Historique</span>
               </div>
-              <button class="films-similar-card-body__btn">Découvrir</button>
+              <button class="films-similar-card-body__btn" onclick="location.href='film.html'">Découvrir</button>
             </div>
           </div>
         </div>
@@ -123,10 +123,10 @@
         <div class="site-map">
           <h4 class="site-map__heading">Plan du site</h4>
             <ul class="site-map-nav">
-              <li class="site-map-nav__link"><a href="#">Acceuil</a></li>
-              <li class="site-map-nav__link"><a href="#">Films</a></li>
-              <li class="site-map-nav__link"><a href="#">Actualités</a></li>
-              <li class="site-map-nav__link"><a href="#">Contact</a></li>
+              <li class="site-map-nav__link"><a href="index.html">Acceuil</a></li>
+              <li class="site-map-nav__link"><a href="list_films.html">Films</a></li>
+              <li class="site-map-nav__link"><a href="list_news.html">Actualités</a></li>
+              <li class="site-map-nav__link"><a href="contact.html">Contact</a></li>
               <li class="site-map-nav__link"><a href="#">Mentions légales</a></li>
             </ul>
         </div>
@@ -145,9 +145,9 @@
   <!-- USE FONTAWESOME JS FOR ICONS -->
   <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="public/scripts.js"></script>
+  <script src="public/js/scripts.js"></script>
   <!-- MAP WITH API KEY-->
-  <script src="public/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjZqIb2AY8X_JGUf0sRKwaBUIOW9qXCIQ&callback=initMap"> </script>
+  <script src="public/js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjZqIb2AY8X_JGUf0sRKwaBUIOW9qXCIQ&callback=initMapFilm"> </script>
   </body>
 </html>
