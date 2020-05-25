@@ -26,4 +26,8 @@ $(document).ready(function() {
 /*use date picker*/ 
 $( "#datepicker" ).datepicker();
  
-
+/* use select 2 */ 
+$(document).ready(function() {
+    $('#category_news').select2();
+    $('#category_films').select2();
+});

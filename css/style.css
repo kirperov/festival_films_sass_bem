@@ -77,6 +77,18 @@ body {
   color: #b1b1b1;
 }
 
+.select2 {
+  font-family: "RobotoLight";
+}
+.select2-container {
+  width: 165px !important;
+}
+.select2-selection--multiple {
+  border-radius: 0 !important;
+  padding: 1%;
+  margin: 0.2em;
+}
+
 .nav {
   width: 100%;
   display: flex;
@@ -393,7 +405,7 @@ body {
 }
 .films-comming__card {
   border-radius: 0.5em;
-  background-color: #008c79d0;
+  background-color: #0087bc36;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -574,7 +586,7 @@ body {
 }
 .films-similar__card {
   border-radius: 0.5em;
-  background-color: #008c79d0;
+  background-color: #0087bc36;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -747,7 +759,7 @@ body {
 
 .films__card {
   border-radius: 0.5em;
-  background-color: #008c79d0;
+  background-color: #0087bc36;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -841,6 +853,7 @@ body {
   background-color: #3c73d3;
   transition-duration: 1s;
   padding: 1em;
+  margin: 1em;
   cursor: pointer;
   font-family: "RobotoLight";
   text-decoration: none;
@@ -859,6 +872,7 @@ body {
   justify-content: center;
   flex-direction: row;
   width: 40%;
+  align-items: center;
 }
 @media screen and (max-width: 991px) {
   .films-search-form-elem {
@@ -873,7 +887,7 @@ body {
 @media screen and (max-width: 1000px) {
   .films__card {
     border-radius: 0.5em;
-    background-color: #008c79d0;
+    background-color: #0087bc36;
     font-family: "RobotoLight";
     margin: 25px;
     transition-duration: 1s;
@@ -981,7 +995,7 @@ body {
 
 .news__card {
   border-radius: 0.5em;
-  background-color: #008c79d0;
+  background-color: #0087bc36;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -1075,6 +1089,7 @@ body {
   background-color: #3c73d3;
   transition-duration: 1s;
   padding: 1em;
+  margin: 1em;
   cursor: pointer;
   font-family: "RobotoLight";
   text-decoration: none;
@@ -1093,6 +1108,7 @@ body {
   justify-content: center;
   flex-direction: row;
   width: 40%;
+  align-items: center;
 }
 @media screen and (max-width: 991px) {
   .news-search-form-elem {
@@ -1107,7 +1123,7 @@ body {
 @media screen and (max-width: 1000px) {
   .news__card {
     border-radius: 0.5em;
-    background-color: #008c79d0;
+    background-color: #0087bc36;
     font-family: "RobotoLight";
     margin: 25px;
     transition-duration: 1s;
@@ -1297,7 +1313,7 @@ body {
 }
 .news-similar__card {
   border-radius: 0.5em;
-  background-color: #008c79d0;
+  background-color: #0087bc36;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;

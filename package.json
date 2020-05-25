@@ -12,6 +12,7 @@
   "browserslist": "last 4 versions",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "select2": "^4.0.13"
   }
 }

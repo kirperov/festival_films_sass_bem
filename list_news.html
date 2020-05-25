@@ -17,6 +17,8 @@
     <meta property="og:image" content="logo" />
     <!-- LINKS STYLES -->
     <link rel="stylesheet" href="css/style.css?v=1.0">
+    <!-- SELECT 2 -->
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <!-- USE FONTAWESOME ICONS CSS -->
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" integrity="sha256-b88RdwbRJEzRx95nCuuva+hO5ExvXXnpX+78h8DjyOE=" crossorigin="anonymous" />
@@ -54,8 +56,15 @@
         <div class="news-search">
           <form class="news-search-form">
             <div class="news-search-form-elem">
-              <input class="news-search-form-elem__input" placeholder="Titre">
-              <input  id="datepicker" class="news-search-form-elem__input" value="2017-06-01">
+              <div class="news-search-form-elem__select">
+                <select id="category_news" name="news_categories[]" multiple="multiple">
+                  <option value="SRT">Sorties</option>
+                  <option value="CNM">Cinéma</option>
+                  <option value="ENV">Environnement</option>
+                  <option value="MND">Monde</option>
+                  <option value="DIV">Divers</option>
+                </select>
+              </div>
             </div>
           </form>
           <button class="news-search-form__btn">Chercher</button>
@@ -87,48 +96,6 @@
             </div>
           </div>
         </div>
-
-        <div class="news">
-          <div class="news__card">
-            <div class="news-card-body">
-              <img class="news-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-              <div class="news-card-body__description">
-                <h3>Another title</h3>
-                <p>This is the content of my news item. Very newsworthy.</p>
-                <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
-              </div>
-              <button class="news-card-body__btn" onclick="location.href='news.html'">Découvrir</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="news">
-            <div class="news__card">
-              <div class="news-card-body">
-                <img class="news-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-                <div class="news-card-body__description">
-                  <h3>Another title</h3>
-                  <p>This is the content of my news item. Very newsworthy.</p>
-                  <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
-                </div>
-                <button class="news-card-body__btn">Découvrir</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="news">
-            <div class="news__card">
-              <div class="news-card-body">
-                <img class="news-card-body__img" src="public/images/img_banner.jpg" alt="logo festival du cinéma en plein air">
-                <div class="news-card-body__description">
-                  <h3>Another title</h3>
-                  <p>This is the content of my news item. Very newsworthy.</p>
-                  <span><i class="far fa-calendar-alt"></i> Date: 9 Mai 2020</span>
-                </div>
-                <button class="news-card-body__btn">Découvrir</button>
-              </div>
-            </div>
-          </div>
       </section>
       <div class="pagination">
         <button class="pagination__btn btn"><i class="fas fa-angle-double-left"></i></button>
@@ -173,8 +140,12 @@
   </footer>
   <!-- USE FONTAWESOME JS FOR ICONS -->
   <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  <!-- JQUERY PACKAGE -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- DATA PICKER CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js" integrity="sha256-/7FLTdzP6CfC1VBAj/rsp3Rinuuu9leMRGd354hvk0k=" crossorigin="anonymous"></script>
+  <!-- SELECT 2 PACKAGE -->
+  <script src="node_modules/select2/dist/js/select2.min.js"></script>
   <script src="public/js/scripts.js"></script>
   </body>
 </html>
