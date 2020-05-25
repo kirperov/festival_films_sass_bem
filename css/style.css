@@ -333,8 +333,10 @@ body {
 .presentation-grid__heading {
   display: flex;
   justify-content: center;
+  line-height: 1em;
   margin: 3em;
   font-family: "RobotoRegular";
+  text-align: center;
   order: -1;
   flex: 1 0 100%;
 }
@@ -505,8 +507,10 @@ body {
 .presentation-film-grid__heading {
   display: flex;
   justify-content: center;
+  line-height: 1em;
   margin: 3em;
   font-family: "RobotoRegular";
+  text-align: center;
   order: -1;
   flex: 1 0 100%;
 }
@@ -555,6 +559,12 @@ body {
   .presentation-film-prev__image {
     width: 80%;
   }
+}
+.presentation-film-prev__detail {
+  background-color: #0087bc3b;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 3em 3em 1em;
 }
 
 .films-similar {
@@ -1224,8 +1234,10 @@ body {
 .presentation-news-grid__heading {
   display: flex;
   justify-content: center;
+  line-height: 1em;
   margin: 3em;
   font-family: "RobotoRegular";
+  text-align: center;
   order: -1;
   flex: 1 0 100%;
 }

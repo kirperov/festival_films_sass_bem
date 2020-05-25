@@ -26,8 +26,10 @@
     &__heading {
         display: flex;
         justify-content: center;
+        line-height: 1em;
         margin: 3em;
         font-family: 'RobotoRegular';
+        text-align: center;
         order: -1;
         flex: 1 0 100%;
     }

@@ -6,6 +6,12 @@
     &-prev {
         @include presentation_card(60%);
         @include responsive_presentation(column);
+        &__detail {
+            background-color: #0087bc3b;
+            display: flex;
+            flex-direction: column;
+            padding:3em 3em 3em 1em;
+        }
     }
 }
  
