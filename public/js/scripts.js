@@ -27,7 +27,7 @@ $(document).ready(function() {
 $( "#datepicker" ).datepicker();
  
 /* use select 2 */ 
-$(document).ready(function() {
-    $('#category_news').select2();
-    $('#category_films').select2();
+$("#category_news, #category_films").select2({
+    placeholder: "Categorie",
+    allowClear: true
 });

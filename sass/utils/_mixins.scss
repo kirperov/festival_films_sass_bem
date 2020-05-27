@@ -44,6 +44,7 @@
         width: $size-description;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         font-family: 'RobotoLight';
     }
     &__description > h2 {
@@ -65,6 +66,8 @@
             flex-direction: $direction; 
             &__description {
                 width: 80%;
+                display: flex;
+                flex-direction: column;
             }
             &__image  {
                 width: 80%;

@@ -46,9 +46,9 @@
 }
 
 .select2 {
-    font-family: "RobotoLight";
     &-container {
         width: 165px !important;
+        font-family: "RobotoLight";
     }
     &-selection--multiple {
         border-radius: 0 !important;

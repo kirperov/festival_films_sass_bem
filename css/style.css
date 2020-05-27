@@ -46,7 +46,7 @@ body {
   padding: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .pagination__btn:hover {
@@ -77,11 +77,9 @@ body {
   color: #b1b1b1;
 }
 
-.select2 {
-  font-family: "RobotoLight";
-}
 .select2-container {
   width: 165px !important;
+  font-family: "RobotoLight";
 }
 .select2-selection--multiple {
   border-radius: 0 !important;
@@ -362,6 +360,7 @@ body {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   font-family: "RobotoLight";
 }
 .presentation-prev__description > h2 {
@@ -381,6 +380,8 @@ body {
   }
   .presentation-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-prev__image {
     width: 80%;
@@ -393,6 +394,8 @@ body {
   }
   .presentation-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-prev__image {
     width: 80%;
@@ -405,7 +408,7 @@ body {
 }
 .films-comming__card {
   border-radius: 0.5em;
-  background-color: #0087bc36;
+  background-color: #c9e6f1;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -452,7 +455,7 @@ body {
   margin: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .films-comming-card-body__btn--large {
@@ -536,6 +539,7 @@ body {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   font-family: "RobotoLight";
 }
 .presentation-film-prev__description > h2 {
@@ -555,6 +559,8 @@ body {
   }
   .presentation-film-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-film-prev__image {
     width: 80%;
@@ -567,6 +573,8 @@ body {
   }
   .presentation-film-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-film-prev__image {
     width: 80%;
@@ -586,7 +594,7 @@ body {
 }
 .films-similar__card {
   border-radius: 0.5em;
-  background-color: #0087bc36;
+  background-color: #c9e6f1;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -633,7 +641,7 @@ body {
   margin: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .films-similar-card-body__btn--large {
@@ -759,7 +767,7 @@ body {
 
 .films__card {
   border-radius: 0.5em;
-  background-color: #0087bc36;
+  background-color: #c9e6f1;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -809,7 +817,7 @@ body {
   margin: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .films-card-body__btn--large {
@@ -887,7 +895,7 @@ body {
 @media screen and (max-width: 1000px) {
   .films__card {
     border-radius: 0.5em;
-    background-color: #0087bc36;
+    background-color: #c9e6f1;
     font-family: "RobotoLight";
     margin: 25px;
     transition-duration: 1s;
@@ -934,7 +942,7 @@ body {
     margin: 0.5em;
     border-radius: 0.4em;
     color: white;
-    background-color: #6e99e9;
+    background-color: #6E99E9;
     transition-duration: 1s;
   }
   .films-card-body__btn--large {
@@ -995,7 +1003,7 @@ body {
 
 .news__card {
   border-radius: 0.5em;
-  background-color: #0087bc36;
+  background-color: #c9e6f1;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -1045,7 +1053,7 @@ body {
   margin: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .news-card-body__btn--large {
@@ -1123,7 +1131,7 @@ body {
 @media screen and (max-width: 1000px) {
   .news__card {
     border-radius: 0.5em;
-    background-color: #0087bc36;
+    background-color: #c9e6f1;
     font-family: "RobotoLight";
     margin: 25px;
     transition-duration: 1s;
@@ -1170,7 +1178,7 @@ body {
     margin: 0.5em;
     border-radius: 0.4em;
     color: white;
-    background-color: #6e99e9;
+    background-color: #6E99E9;
     transition-duration: 1s;
   }
   .news-card-body__btn--large {
@@ -1269,6 +1277,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   font-family: "RobotoLight";
 }
 .presentation-news-prev__description > h2 {
@@ -1288,6 +1297,8 @@ body {
   }
   .presentation-news-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-news-prev__image {
     width: 80%;
@@ -1300,6 +1311,8 @@ body {
   }
   .presentation-news-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .presentation-news-prev__image {
     width: 80%;
@@ -1313,7 +1326,7 @@ body {
 }
 .news-similar__card {
   border-radius: 0.5em;
-  background-color: #0087bc36;
+  background-color: #c9e6f1;
   font-family: "RobotoLight";
   margin: 25px;
   transition-duration: 1s;
@@ -1360,7 +1373,7 @@ body {
   margin: 0.5em;
   border-radius: 0.4em;
   color: white;
-  background-color: #6e99e9;
+  background-color: #6E99E9;
   transition-duration: 1s;
 }
 .news-similar-card-body__btn--large {
@@ -1445,6 +1458,7 @@ body {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   font-family: "RobotoLight";
 }
 .contact-prev__description > h2 {
@@ -1464,6 +1478,8 @@ body {
   }
   .contact-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .contact-prev__image {
     width: 80%;
@@ -1476,6 +1492,8 @@ body {
   }
   .contact-prev__description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
   .contact-prev__image {
     width: 80%;
